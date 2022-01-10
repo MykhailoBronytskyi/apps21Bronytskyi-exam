@@ -16,12 +16,13 @@ public class JSONAppTest {
         Json jsonObject = JSONApp.sessionResult();
 
         String expectedJSON =
-                "{'name': 'Andrii', 'surname': 'Rodionov', 'year': 2, 'exams': [" +
-                        "{'course': 'OOP', 'mark': 3, 'passed': true}," +
-                        "{'course': 'English', 'mark': 5, 'passed': true}," +
-                        "{'course': 'Math', 'mark': 2, 'passed': false}" +
+                "{'name': 'Mykhailo', 'surname': 'Bronytskyi', 'year': 2, 'exams': [" +
+                        "{'course': 'OOP', 'mark': 5, 'passed': true}," +
+                        "{'course': 'Algorithms', 'mark': 5, 'passed': true}," +
+                        "{'course': 'POC', 'mark': 2, 'passed': false}" +
                         "]}";
 
         JSONAssert.assertEquals(expectedJSON, jsonObject.toJson(), true);
+//        System.out.println(jsonObject.toJson());
     }
 }

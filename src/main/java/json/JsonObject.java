@@ -23,7 +23,6 @@ public class JsonObject extends Json {
         }
         result.append("}");
 
-//        String result_str = result.toString();
         int len = result.length();
         if (len == 2){
             return result.toString();

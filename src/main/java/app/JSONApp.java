@@ -32,9 +32,21 @@ public class JSONApp {
         System.out.println(json.toJson());
     }
 
+//    public static JsonObject sessionResult() {
+//        JsonObject jsonObject = null;
+//        // ToDo
+//        return jsonObject;
+//    }
+
     public static JsonObject sessionResult() {
-        JsonObject jsonObject = null;
-        // ToDo
-        return jsonObject;
+        Student student = new Student(
+                "Mykhailo",
+                "Bronytskyi",
+                2,
+                new Tuple<>("OOP", 5),
+                new Tuple<>("Algorithms", 5),
+                new Tuple<>("POC", 2)
+        );
+        return student.toJsonObject();
     }
 }
