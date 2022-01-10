@@ -24,7 +24,7 @@ public class JsonObjectToJsonTest {
         JsonObject jsonObject = new JsonObject(jsonPair);
 
         String expectedJSON = "{'surname': 'Nik'}";
-
+        System.out.println(jsonObject.toJson());
         JSONAssert.assertEquals(expectedJSON, jsonObject.toJson(), true);
     }
 
